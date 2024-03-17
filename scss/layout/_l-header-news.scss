@@ -1,0 +1,143 @@
+@use "../global/forwards" as f;
+@use "../global/mixin/breakpoint" as m;
+
+.l-header-news {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  padding: 1.7vw 2.78vw 1.7vw 3.33vw;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  @include m.mq(sp) {
+    padding: 16px 20px 16px 24px;
+  }
+
+  .l-header-news-logoArea {
+    align-items: center;
+    display: flex;
+    gap: 0.65vw;
+    @include m.mq(sp) {
+      font-size: 14px;
+      gap: 12px;
+    }
+
+    img {
+      height: 4.3vw;
+      width: 4.3vw;
+      @include m.mq(sp) {
+        height: 36px;
+        width: 36px;
+      }
+    }
+  }
+
+  .l-header-news-news__navArea {
+    align-items: center;
+    display: flex;
+    gap: 5vw;
+  }
+
+  .l-header-news__nav ul {
+    align-items: center;
+    display: flex;
+    gap: 3.1vw;
+  }
+
+  .l-header-news__nav--sns ul {
+    align-items: center;
+    display: flex;
+    gap: 1.4vw;
+
+    img {
+      height: 3.33vw;
+      width: 3.33vw;
+    }
+  }
+
+  // ハンバーガーメニュー
+  .l-header__hamburger-button {
+    border: 1px solid f.$black;
+    display: grid;
+    height: 32px;
+    gap: 6px;
+    padding: 8px 5px;
+    width: 32px;
+
+    span {
+      background: f.$bg-black;
+      display: inline-block;
+      height: 1px;
+      width: 100%;
+    }
+  }
+
+  .l-header__hamburger-menu {
+    display: none;
+  }
+
+  // ハンバーガーメニューがアクティブに
+  .l-header__hamburger-button.active {
+    background: f.$bg-white;
+    border: 1px solid f.$border-gray;
+    position: relative;
+    z-index: 99;
+
+    span {
+      background: f.$border-gray;
+    }
+
+    .top {
+      transform: rotate(45deg) translate(5.5px, 5px);
+    }
+
+    .middle {
+      opacity: 0;
+    }
+
+    .bottom {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+
+  .l-header__hamburger-menu.active {
+    background: rgba($color: #D8D8E1, $alpha: 0.9);
+    display: block;
+    left: 0;
+    top: 0;
+    padding: 64px 32px;
+    position: absolute;
+    width: 100%;
+    z-index: 98;
+
+    .l-header__hamburger-list ul {
+      color: f.$black;
+      display: grid;
+      font-size: 14px;
+      gap: 16px;
+      justify-content: center;
+
+      li {
+        text-align: center;
+      }
+    }
+
+    .l-header__hamburger-sns {
+      margin-top: 32px;
+
+      ul {
+        align-items: center;
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+
+        img {
+          height: 32px;
+          width: 32px;
+        }
+      }
+    }
+  }
+}

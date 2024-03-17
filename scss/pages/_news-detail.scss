@@ -1,0 +1,244 @@
+@use "../global/forwards" as f;
+@use "../global/mixin/breakpoint" as m;
+
+.p-news-detail {
+  padding: 12vw 0;
+
+  @include m.mq(sp) {
+    padding: 80px 16px;
+  }
+
+  .p-news-detail__inner {
+    margin: 0 auto;
+    width: 75vw;
+
+    @include m.mq(sp) {
+      width: 100%;
+    }
+  }
+
+  .p-news-detail__title {
+    border-left: 10px solid;
+    border-bottom: 3px solid #081346;
+    border-image: linear-gradient(to bottom, #5790FF, #081346) 1;
+    font-size: f.$fz-36;
+    font-weight: bold;
+    padding: 1.2vw;
+    width: 75%;
+
+    @include m.mq(sp) {
+      font-size: 22px;
+      padding: 10px 12px;
+      width: 100%;
+    }
+  }
+
+  .p-news-detail__categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14.3vw, max-content));
+    gap: 1.11vw 1.7vw;
+    margin-top: 2.36vw;
+
+    @include m.mq(sp) {
+      gap: 12px 16px;
+      grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
+      margin-top: 16px;
+    }
+
+    li {
+      align-items: center;
+      background: #3B4972;
+      border-radius: 70px;
+      color: f.$white;
+      display: flex;
+      font-size: f.$fz-22;
+      font-weight: bold;
+      justify-content: center;
+      padding: 1vw;
+
+      @include m.mq(sp) {
+        font-size: 14px;
+        padding: 8px;
+      }
+    }
+  }
+
+  .p-news-detail__time {
+    margin-top: 1.11vw;
+
+    @include m.mq(sp) {
+      font-size: 14px;
+      margin-top: 16px;
+    }
+  }
+
+  .p-news-detail__contents {
+    display: grid;
+    gap: 1.7vw;
+    margin-top: 3.33vw;
+
+    @include m.mq(sp) {
+      gap: 20px;
+      margin-top: 36px;
+    }
+
+    h2 {
+      border-bottom: 1px solid f.$border-gray;
+      font-size: f.$fz-30;
+      padding: 0 0 1.11vw 1.3vw;
+
+      @include m.mq(sp) {
+        font-size: 24px;
+        padding: 0 0 8px 12px;
+      }
+    }
+
+    p {
+      font-size: f.$fz-22;
+
+      @include m.mq(sp) {
+        font-size: 14px;
+      }
+    }
+
+    ul {
+      font-size: f.$fz-20;
+      list-style: inside;
+
+      @include m.mq(sp) {
+        font-size: 16px;
+      }
+
+      li {
+        list-style: inside;
+      }
+    }
+
+    blockquote {
+      background: #F1F0EE;
+      border-left: 3px solid #102B9F;
+      font-size: f.$fz-22;
+      padding: 1.497vw 4.5vw;
+      position: relative;
+
+      @include m.mq(sp) {
+        font-size: 14px;
+        padding: 12px 32px;
+      }
+
+      &::before {
+        content: '“';
+        display: block;
+        font-size: 5vw;
+        left: 1.3vw;
+        position: absolute;
+        top: -1.4vw;
+
+        @include m.mq(sp) {
+          font-size: 48px;
+          top: -3.4vw;
+        }
+      }
+
+      &::after {
+        bottom: -3.5vw;
+        content: "”";
+        display: block;
+        font-size: 5vw;
+        right: 1.5vw;
+        position: absolute;
+
+        @include m.mq(sp) {
+          font-size: 48px;
+          bottom: -8.4vw;
+        }
+      }
+    }
+
+    figure {
+      border-radius: 3.33vw;
+
+      figure img {
+        max-height: 40vw !important;
+        object-fit: contain !important;
+
+        @include m.mq(sp) {
+          height: 60vw;
+        }
+      }
+
+      img {
+        max-height: 40vw;
+        object-fit: contain;
+
+        @include m.mq(sp) {
+          height: 60vw;
+        }
+      }
+    }
+  }
+
+  .pagination {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    margin-top: 5vw;
+
+    @include m.mq(sp) {
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .prev,
+    .next {
+      font-size: f.$fz-28;
+      position: relative;
+
+      @include m.mq(sp) {
+        font-size: 16px;
+      }
+
+      &:before {
+        border-left: 2px solid #0729CC;
+        border-bottom: 2px solid #0729CC;
+        content: '';
+        display: inline-block;
+        height: 1.11vw;
+        position: absolute;
+        top: 1.2vw;
+        width: 1.11vw;
+        @include m.mq(sp) {
+          height: 8px;
+          top: 37%;
+          width: 8px;
+        }
+      }
+    }
+
+    .prev:before {
+      transform: rotate(45deg);
+      left: -2.3vw;
+      @include m.mq(sp) {
+        left: -22%;
+      }
+    }
+
+    .next:before {
+      transform: rotate(225deg);
+      right: -2.3vw;
+      @include m.mq(sp) {
+        right: -22%;
+      }
+    }
+
+    .vertical-border {
+      background: #0729CC;
+      height: 4vw;
+      width: 2px;
+      @include m.mq(sp) {
+        height: 24px;
+      }
+    }
+  }
+}

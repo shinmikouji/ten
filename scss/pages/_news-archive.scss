@@ -1,0 +1,150 @@
+@use "../global/forwards" as f;
+@use "../global/mixin/breakpoint" as m;
+
+.p-news-archive {
+  background-image: url("../images/news/bg-news-archive.png");
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top 20% right;
+  padding: 12vw 0;
+  width: 100%;
+
+  @include m.mq(sp) {
+    background-size: 350px;
+    padding: 80px 16px;
+  }
+
+  .p-news-archive__list {
+    display: grid;
+    gap: 2vw;
+    margin: 0 auto;
+    width: 80vw;
+
+    @include m.mq(sp) {
+      gap: 32px;
+      width: 100%;
+    }
+  }
+
+  .p-news-archive__items {
+    border-bottom: 1px solid f.$border-gray;
+    padding-bottom: 2vw;
+
+    @include m.mq(sp) {
+      padding-bottom: 12px;
+    }
+
+    .p-news-archive__link {
+      display: grid;
+      gap: 5vw;
+      grid-template-columns: 30vw 1fr;
+      width: 100%;
+
+      @include m.mq(sp) {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      img {
+        max-height: 25vw;
+        object-fit: cover;
+
+        @include m.mq(sp) {
+          max-height: 300px;
+        }
+      }
+    }
+
+    .p-news-archive__items-textArea {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6vw;
+
+      @include m.mq(sp) {
+        gap: 16px;
+      }
+    }
+
+    h3 {
+      font-size: f.$fz-32;
+      font-weight: bold;
+      line-height: 1;
+
+      @include m.mq(sp) {
+        font-size: 24px;
+      }
+    }
+
+    .p-news-archive__items-time {
+      font-size: f.$fz-22;
+
+      @include m.mq(sp) {
+        font-size: 12px;
+      }
+    }
+
+    p:last-of-type {
+      display: -webkit-box;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+
+      @include m.mq(sp) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .p-news-archive-pagination {
+    display: flex;
+    font-size: f.$fz-22;
+    justify-content: center;
+    gap: 1vw;
+    text-align: center;
+
+    @include m.mq(sp) {
+      font-size: 16px;
+      gap: 8px;
+    }
+
+    .current {
+      color: f.$blue;
+    }
+
+    .prev,
+    .next {
+      align-items: center;
+      display: flex;
+      position: relative;
+
+      &::after {
+        color: f.$blue;
+        display: block;
+        position: absolute;
+      }
+    }
+
+    .prev {
+      &::after {
+        content: "〈";
+        left: -1.4em;
+
+        @include m.mq(sp) {
+          left: -24px;
+        }
+      }
+    }
+
+    .next {
+      &::after {
+        content: "〉";
+        right: -1.4em;
+
+        @include m.mq(sp) {
+          right: -24px;
+        }
+      }
+    }
+  }
+}

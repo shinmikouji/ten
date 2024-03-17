@@ -1,0 +1,14 @@
+@use "../../global/forwards" as f;
+@use "../../global/mixin/breakpoint" as m;
+
+.c-display--pc {
+  @include m.mq(sp) {
+    display: none !important;
+  }
+}
+
+.c-display--sp {
+  @include m.mq(pc) {
+    display: none !important;
+  }
+}

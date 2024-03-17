@@ -1,0 +1,257 @@
+@use "../global/forwards" as f;
+@use "../global/mixin/breakpoint" as m;
+
+.p-contact {
+  padding: 8.5vw 0;
+
+  @include m.mq(sp) {
+    padding: 40px 20px;
+  }
+
+  .p-contact__bannerArea {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    width: 65vw;
+
+    @include m.mq(sp) {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+
+    .p-contact__banner-item {
+      color: f.$white;
+      padding: f.$fz-24 0px;
+      text-align: center;
+
+      @include m.mq(sp) {
+        padding: 12px 0;
+      }
+
+      &:first-of-type {
+        background-image: url("../images/contact/bg-contact-tel.jpg");
+        background-size: cover;
+        text-shadow: 1px 1px 1px f.$text-shadow-01;
+      }
+
+      &:last-of-type {
+        background-image: url("../images/contact/bg-contact-mail.jpg");
+        background-size: cover;
+        text-shadow: 1px 1px 1px f.$text-shadow-02;
+      }
+
+      h3 {
+        align-items: center;
+        display: flex;
+        font-size: f.$fz-36;
+        gap: 0.4vw;
+        justify-content: center;
+
+        @include m.mq(sp) {
+          font-size: 20px;
+          gap: 6px;
+        }
+
+        img {
+          height: 3.2vw;
+          width: 3.2vw;
+
+          @include m.mq(sp) {
+            height: 24px;
+            width: 24px;
+          }
+        }
+      }
+
+      .p-contact__link--tel {
+        font-size: f.$fz-32;
+
+        @include m.mq(sp) {
+          font-size: 20px;
+        }
+      }
+
+      .p-contact__banner-text {
+        font-size: f.$fz-20;
+        line-height: 2.9;
+
+        @include m.mq(sp) {
+          font-size: 14px;
+        }
+      }
+
+      .p-contact__banner-reception {
+        align-items: center;
+        display: flex;
+        font-size: f.$fz-28;
+        gap: 0.7vw;
+        justify-content: center;
+        margin-top: 1vw;
+
+        @include m.mq(sp) {
+          font-size: 14px;
+          gap: 12px;
+          margin-top: 12px;
+        }
+
+        p {
+          border: 1px solid f.$white;
+          border-radius: 4px;
+          line-height: 1;
+          padding: 0.8vw;
+
+          @include m.mq(sp) {
+            padding: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// お問い合わせフォーム
+.p-contact-form {
+  background: f.$bg-beige;
+  padding: 5.56vw 0;
+
+  @include m.mq(sp) {
+    padding: 40px 16px;
+  }
+
+  .p-contact-form__list {
+    display: grid;
+    gap: 1.7vw;
+    margin: 5vw auto 0;
+    width: 60vw;
+
+    @include m.mq(sp) {
+      gap: 16px;
+      margin: 28px auto 0;
+      width: 100%;
+    }
+  }
+
+  .p-contact-form__items {
+    display: grid;
+    gap: 1.3vw;
+
+    @include m.mq(sp) {
+      gap: 8px;
+    }
+
+    .p-contact-form__label {
+      align-items: center;
+      display: flex;
+      gap: 0.75vw;
+      line-height: 1;
+
+      @include m.mq(sp) {
+        gap: 6px;
+      }
+
+      .label {
+        border-radius: 18px;
+        padding: 0.2vw 0.6vw;
+
+        @include m.mq(sp) {
+          font-size: 12px;
+          padding: 4px 6px;
+        }
+      }
+
+      .gold {
+        background: #EFC90C;
+      }
+
+      .gray {
+        background: #D6D4CF;
+      }
+
+      label {
+        font-size: f.$fz-22;
+
+        @include m.mq(sp) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    input {
+      box-shadow: 0px 0px 5px 0px #bbbbbb;
+      border-radius: 10px;
+      font-size: f.$fz-22;
+      padding: 0.7vw 1.3vw;
+      width: 100%;
+
+      @include m.mq(sp) {
+        font-size: 14px;
+        padding: 8px 12px;
+      }
+    }
+
+    textarea {
+      box-shadow: 0px 0px 5px 0px #bbbbbb;
+      border: none;
+      border-radius: 10px;
+      font-size: f.$fz-22;
+      padding: 0.7vw 1.3vw;
+      width: 100%;
+
+      @include m.mq(sp) {
+        font-size: 14px;
+        padding: 8px 12px;
+      }
+    }
+  }
+
+  .p-contact-form__buttonArea {
+    margin: 0 auto;
+    position: relative;
+    width: fit-content;
+
+    @include m.mq(sp) {
+      width: 50%;
+    }
+
+    &>p span {
+      display: none;
+    }
+
+    &::after {
+      background: url("../images/contact/contact-button-icon.svg");
+      background-size: cover;
+      content: "";
+      display: block;
+      height: 2vw;
+      right: 1.6vw;
+      position: absolute;
+      top: 5.4vw;
+      width: 2.6vw;
+
+      @include m.mq(sp) {
+        height: 15px;
+        right: 8%;
+        top: 60%;
+        width: 20px;
+      }
+    }
+  }
+
+  .p-contact-form__button {
+    background: #102B9F;
+    border-radius: 24px;
+    color: f.$white;
+    font-size: f.$fz-22;
+    margin: 4.35vw auto 0;
+    padding: 0.7vw 0;
+    position: relative;
+    width: 20vw;
+
+    @include m.mq(sp) {
+      font-size: 14px;
+      margin: 24px auto 0;
+      padding: 8px 0;
+      width: 100%;
+    }
+  }
+}

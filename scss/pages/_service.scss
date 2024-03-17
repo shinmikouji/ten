@@ -1,0 +1,203 @@
+@use "../global/forwards" as f;
+@use "../global/mixin/breakpoint" as m;
+
+.p-service {
+  background-image: url("../images/service/bg-service.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 5.56vw 0 8.33vw;
+  @include m.mq(sp) {
+    background-image: url("../images/service/bg-service-sp.jpg");
+    background-size: 70vh;
+    background-position: right 115px;
+    padding: 32px 0 0;
+  }
+
+  .p-service__titleArea {
+    text-align: center;
+    margin-top: 2.78vw;
+
+    @include m.mq(sp) {
+      padding: 0 16px;
+      margin-top: 16px;
+    }
+
+    .p-service__title {
+      align-items: center;
+      display: grid;
+      font-size: f.$fz-32;
+      font-weight: bold;
+      font-family: f.$Mincho;
+      gap: 0.3vw;
+      grid-auto-flow: column;
+      line-height: 2;
+      margin: 0 auto;
+      width: fit-content;
+
+      @include m.mq(sp) {
+        font-size: 16px;
+      }
+
+      span {
+        font-size: f.$fz-48;
+        line-height: 1;
+
+        @include m.mq(sp) {
+          font-size: 24px;
+        }
+
+        &:first-of-type {
+          align-self: flex-start;
+        }
+
+        &:last-of-type {
+          align-self: flex-end;
+        }
+      }
+    }
+
+    .p-service__subtitle {
+      font-size: f.$fz-20;
+      margin-top: 1.7vw;
+
+      @include m.mq(sp) {
+        font-size: 12px;
+        margin-top: 4px;
+      }
+    }
+
+    .p-service__text {
+      margin-top: 1.7vw;
+
+      @include m.mq(sp) {
+        font-size: 14px;
+        margin-top: 18px;
+        text-align: left;
+      }
+    }
+  }
+
+  .p-service__contents-list {
+    display: grid;
+    gap: 11vw;
+    margin-top: 10vw;
+
+    @include m.mq(sp) {
+      gap: 0;
+      margin-top: 40px;
+    }
+
+    .p-service__contents-items {
+      position: relative;
+      width: 75%;
+
+      &:nth-of-type(2n) .p-service__contents-textArea {
+        @include m.mq(sp) {
+          background: rgba($color: f.$bg-white, $alpha: 0);
+        }
+      }
+
+      @include m.mq(sp) {
+        position: static;
+        width: 100%;
+      }
+    }
+
+    .p-service__contents-textArea {
+      background: f.$bg-beige;
+      padding: 3.33vw 0;
+      text-align: center;
+
+      @include m.mq(sp) {
+        padding: 40px 16px;
+      }
+
+      h3 {
+        font-size: f.$fz-22;
+
+        @include m.mq(sp) {
+          font-size: 16px;
+        }
+
+        span {
+          color: f.$blue;
+          font-size: f.$fz-30;
+          font-weight: bold;
+
+          @include m.mq(sp) {
+            font-size: 16px;
+          }
+        }
+      }
+
+      img {
+        @include m.mq(sp) {
+          border: 5px solid f.$white;
+          border-top-right-radius: 100px;
+          border-bottom-left-radius: 100px;
+          box-shadow: 5px 5px 10px 0px #564634;
+          margin-top: 24px;
+          width: 100%;
+        }
+      }
+      img.second {
+        @include m.mq(sp) {
+          border: 5px solid f.$white;
+          border-top-right-radius: 0;
+          border-bottom-left-radius: 0;
+          border-top-left-radius: 100px;
+          border-bottom-right-radius: 100px;
+          box-shadow: 5px 5px 10px 0px #564634;
+        }
+      }
+
+      p {
+        margin: 1.7vw auto 0;
+        text-align: left;
+        width: 50%;
+
+        @include m.mq(sp) {
+          font-size: 14px;
+          margin: 24px 0 0;
+          width: 100%;
+        }
+
+        span {
+          color: f.$blue;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .p-service__contents-image {
+      border: 5px solid f.$white;
+      border-top-right-radius: 6.5vw;
+      border-bottom-left-radius: 6.5vw;
+      box-shadow: 5px 5px 10px 0px #564634;
+      right: -150px;
+      overflow: hidden;
+      position: absolute;
+      top: -40px;
+      width: 26vw;
+
+      @include m.mq(sp) {
+        position: static;
+      }
+    }
+
+    // 二個目の要素だけに当てるスタイル
+    .p-service__contents-items:nth-of-type(2n) {
+      margin-left: auto;
+
+      .p-service__contents-image {
+        border-top-right-radius: 0;
+        border-top-left-radius: 6.5vw;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 6.5vw;
+        right: 0;
+        left: -150px;
+      }
+    }
+  }
+}

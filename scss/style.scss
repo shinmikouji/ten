@@ -1,0 +1,22 @@
+@charset "UTF-8";
+// foundation
+@use "../scss/foundation/base";
+@use "../scss/foundation/reset";
+
+// layout
+@use "../scss/layout/l-header";
+@use "../scss/layout/l-header-news";
+@use "../scss/layout/l-footer";
+
+// object
+@use "../scss/object/component/c-subtitle";
+@use "../scss/object/component/c-mv";
+@use "../scss/object/component/c-display";
+
+// pages
+@use "../scss/pages/top";
+@use "../scss/pages/company";
+@use "../scss/pages/service";
+@use "../scss/pages/contact";
+@use "../scss/pages/news-detail";
+@use "../scss/pages/news-archive";

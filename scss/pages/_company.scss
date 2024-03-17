@@ -1,0 +1,85 @@
+@use "../global/forwards" as f;
+@use "../global/mixin/breakpoint" as m;
+
+.p-company {
+  background-image: url("../images/company/bg-company.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 6.5vw 0;
+  position: relative;
+
+  @include m.mq(sp) {
+    background-image: url("../images/company/bg-company-sp.jpg");
+    background-size: 70vh;
+    background-position: right 115px;
+  }
+
+  .p-company__contents {
+    display: grid;
+    gap: 0.15vw;
+    grid-template-columns: 15.7vw 1fr;
+    margin: 0 auto;
+    width: 65.3vw;
+
+    @include m.mq(sp) {
+      gap: 4px;
+      grid-template-columns: 24% 1fr;
+      padding: 0 16px;
+      width: 100%;
+    }
+
+    dt {
+      align-items: center;
+      border-radius: 10px;
+      color: f.$white;
+      display: flex;
+      justify-content: center;
+      padding: 0.55vw 0;
+      text-align: center;
+
+      @include m.mq(sp) {
+        align-items: center;
+        display: flex;
+        font-size: 14px;
+        justify-content: center;
+        padding: 4px 0;
+      }
+    }
+
+    dd {
+      align-items: center;
+      background: f.$bg-beige;
+      border-radius: 10px;
+      display: flex;
+      font-size: f.$fz-20;
+      padding: 0.55vw 0 0.55vw 0.55vw;
+
+      @include m.mq(sp) {
+        font-size: 14px;
+        padding: 4px 0 4px 8px;
+      }
+    }
+
+    // リストの色
+    .first {
+      background: #5790FF;
+    }
+
+    .second {
+      background: #3066FF;
+    }
+
+    .third {
+      background: #042BFE;
+    }
+
+    .fourth {
+      background: #0729CC;
+    }
+
+    .fifth {
+      background: #102B9F;
+    }
+  }
+}

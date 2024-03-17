@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67.178" height="54.5" viewBox="0 0 67.178 54.5">
+  <defs>
+    <filter id="パス_23" x="0.589" y="0" width="64.5" height="54" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-color="#9b735a"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="パス_24" x="0" y="4.661" width="65.678" height="30.964" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur-2"/>
+      <feFlood flood-color="#9b735a"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="アイコン" transform="translate(9.509 -7)">
+    <g id="Icon_feather-mail" data-name="Icon feather-mail" transform="translate(-2.92 9)">
+      <path id="パス_23-2" data-name="パス 23" d="M8.25,6h42a5.265,5.265,0,0,1,5.25,5.25v31.5A5.265,5.265,0,0,1,50.25,48h-42A5.265,5.265,0,0,1,3,42.75V11.25A5.265,5.265,0,0,1,8.25,6Z" fill="none" stroke="#9b735a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="パス_24-2" data-name="パス 24" d="M55.5,9,29.25,27.375,3,9" transform="translate(0 2.25)" fill="none" stroke="#9b735a" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+    <g id="Icon_feather-mail-2" data-name="Icon feather-mail" transform="translate(-5.92 7)">
+      <g transform="matrix(1, 0, 0, 1, -3.59, 0)" filter="url(#パス_23)">
+        <path id="パス_23-3" data-name="パス 23" d="M8.25,6h42a5.265,5.265,0,0,1,5.25,5.25v31.5A5.265,5.265,0,0,1,50.25,48h-42A5.265,5.265,0,0,1,3,42.75V11.25A5.265,5.265,0,0,1,8.25,6Z" transform="translate(3.59)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -3.59, 0)" filter="url(#パス_24)">
+        <path id="パス_24-3" data-name="パス 24" d="M55.5,9,29.25,27.375,3,9" transform="translate(3.59 2.25)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
+</svg>

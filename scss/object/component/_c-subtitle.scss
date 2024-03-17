@@ -1,0 +1,14 @@
+@use "../../global/forwards" as f;
+@use "../../global/mixin/breakpoint" as m;
+
+.c-subtitle {
+  font-size: f.$fz-56;
+  font-weight: bold;
+  font-family: f.$Mincho;
+  line-height: 1.5;
+  text-align: center;
+
+  @include m.mq(sp) {
+    font-size: 18px;
+  }
+}

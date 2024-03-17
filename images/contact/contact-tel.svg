@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61.576" height="61.802" viewBox="0 0 61.576 61.802">
+  <defs>
+    <filter id="Icon_awesome-phone-alt" x="0" y="0" width="60.076" height="60.302" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-color="#3b4972"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="アイコン" transform="translate(4.5 -2.888)">
+    <path id="Icon_awesome-phone-alt-2" data-name="Icon awesome-phone-alt" d="M49.619,36.252l-11.173-4.81a2.387,2.387,0,0,0-2.793.691L30.7,38.206A37.059,37.059,0,0,1,13.028,20.452l6.045-4.97a2.406,2.406,0,0,0,.688-2.806L14.974,1.454A2.407,2.407,0,0,0,12.23.061L1.856,2.466A2.4,2.4,0,0,0,0,4.809,46.385,46.385,0,0,0,46.288,51.3a2.4,2.4,0,0,0,2.334-1.864l2.394-10.421a2.437,2.437,0,0,0-1.4-2.766Z" transform="translate(3 10.388)" fill="#3b4972"/>
+    <g transform="matrix(1, 0, 0, 1, -4.5, 2.89)" filter="url(#Icon_awesome-phone-alt)">
+      <path id="Icon_awesome-phone-alt-3" data-name="Icon awesome-phone-alt" d="M49.619,36.252l-11.173-4.81a2.387,2.387,0,0,0-2.793.691L30.7,38.206A37.059,37.059,0,0,1,13.028,20.452l6.045-4.97a2.406,2.406,0,0,0,.688-2.806L14.974,1.454A2.407,2.407,0,0,0,12.23.061L1.856,2.466A2.4,2.4,0,0,0,0,4.809,46.385,46.385,0,0,0,46.288,51.3a2.4,2.4,0,0,0,2.334-1.864l2.394-10.421a2.437,2.437,0,0,0-1.4-2.766Z" transform="translate(4.5 4.5)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

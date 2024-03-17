@@ -1,0 +1,30 @@
+@use "../../global/forwards" as f;
+@use "../../global/mixin/breakpoint" as m;
+
+.c-mv {
+  position: relative;
+  height: 300px;
+
+  @include m.mq(sp) {
+    height: 120px;
+  }
+
+  img {
+    height: 100%;
+  }
+
+  h1 {
+    color: f.$white;
+    font-size: f.$fz-32;
+    font-weight: bold;
+    font-family: f.$Mincho;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+
+    @include m.mq(sp) {
+      font-size: 16px;
+    }
+  }
+}
