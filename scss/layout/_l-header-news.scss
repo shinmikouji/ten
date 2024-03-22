@@ -3,6 +3,8 @@
 
 .l-header-news {
   align-items: center;
+  background: rgba($color: #000000, $alpha: 0.5);
+  color: f.$white;
   display: flex;
   justify-content: space-between;
   left: 0;
@@ -11,6 +13,7 @@
   top: 0;
   width: 100%;
   z-index: 1;
+
   @include m.mq(sp) {
     padding: 16px 20px 16px 24px;
   }
@@ -19,6 +22,7 @@
     align-items: center;
     display: flex;
     gap: 0.65vw;
+
     @include m.mq(sp) {
       font-size: 14px;
       gap: 12px;
@@ -27,6 +31,7 @@
     img {
       height: 4.3vw;
       width: 4.3vw;
+
       @include m.mq(sp) {
         height: 36px;
         width: 36px;
@@ -59,7 +64,7 @@
 
   // ハンバーガーメニュー
   .l-header__hamburger-button {
-    border: 1px solid f.$black;
+    border: 1px solid f.$white;
     display: grid;
     height: 32px;
     gap: 6px;
@@ -67,7 +72,7 @@
     width: 32px;
 
     span {
-      background: f.$bg-black;
+      background: f.$bg-white;
       display: inline-block;
       height: 1px;
       width: 100%;

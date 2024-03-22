@@ -31,7 +31,7 @@
       </li>
       <li class="p-service__contents-items">
         <div class="p-service__contents-textArea">
-          <h3>顧客中心<span>のアプローチ</span></h3>
+          <h3><span>顧客中心</span>のアプローチ</h3>
           <img src="<?php echo get_template_directory_uri(); ?>/images/service/service-02.png" alt="パートナー企業との密接な連携に関する画像" class="second c-display--sp">
           <p>
             私たちは、顧客中心のアプローチを重視しています。各顧客の<span>特定の課題</span>や<span>目標を深く理解</span>し、パートナー企業と共同でカスタマイズされたそリューションを設計・提案します。これにより、<span>顧客のビジネス成長を加速させ、長期的な成功をサポート</span>します。

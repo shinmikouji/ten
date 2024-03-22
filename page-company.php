@@ -9,7 +9,7 @@
   <div class="p-company">
     <dl class="p-company__contents">
       <dt class="first">会社名</dt>
-      <dd>株式会社TEN</dd>
+      <dd>株式会社TEN&nbsp;10</dd>
       <dt class="second">設立日</dt>
       <dd>2024年3月15日</dd>
       <dt class="second">代表取締役</dt>
@@ -17,7 +17,7 @@
       <dt class="third">資本金</dt>
       <dd>100万円</dd>
       <dt class="third">従業員数</dt>
-      <dd></dd>
+      <dd>5名</dd>
       <dt class="fourth">本社所在地</dt>
       <dd>〒530−0015&emsp;<br class="c-display--sp"/>大阪市北区中崎西4-3-9−204</dd>
       <dt class="fourth">事業内容</dt>

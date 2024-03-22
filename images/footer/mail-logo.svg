@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="31.5" height="24.75" viewBox="0 0 31.5 24.75">
   <g id="Icon_ion-mail-outline" data-name="Icon ion-mail-outline" transform="translate(1.125 1.125)">
-    <path id="パス_2" data-name="パス 2" d="M6.188,6.75H29.813a2.812,2.812,0,0,1,2.813,2.813V26.438a2.812,2.812,0,0,1-2.812,2.813H6.188a2.812,2.812,0,0,1-2.812-2.812V9.563A2.813,2.813,0,0,1,6.188,6.75Z" transform="translate(-3.375 -6.75)" fill="none" stroke="#93c4fe" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25"/>
-    <path id="パス_3" data-name="パス 3" d="M7.875,11.25,18,19.125,28.125,11.25" transform="translate(-3.375 -6.75)" fill="none" stroke="#94c5ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25"/>
+    <path id="パス_2" data-name="パス 2" d="M6.188,6.75H29.813a2.812,2.812,0,0,1,2.813,2.813V26.438a2.812,2.812,0,0,1-2.812,2.813H6.188a2.812,2.812,0,0,1-2.812-2.812V9.563A2.813,2.813,0,0,1,6.188,6.75Z" transform="translate(-3.375 -6.75)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25"/>
+    <path id="パス_3" data-name="パス 3" d="M7.875,11.25,18,19.125,28.125,11.25" transform="translate(-3.375 -6.75)" fill="none" stroke="#707070" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.25"/>
   </g>
 </svg>

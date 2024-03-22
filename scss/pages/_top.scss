@@ -2,12 +2,11 @@
 @use "../global/mixin/breakpoint" as m;
 
 // オープニングアニメーション
-.p-top-countup,
-.p-top-message {
+.p-top-count-up__container,
+.p-top-message__container {
   align-items: center;
   background: f.$bg-white;
   color: f.$blue;
-  display: flex;
   font-size: 7.5vw;
   height: 100vh;
   justify-content: center;
@@ -15,107 +14,87 @@
   width: 100%;
 }
 
-.p-top-countup {
+.p-top-count-up__container {
   display: none;
-  z-index: 98;
+  z-index: 90;
 }
 
-.p-top-message {
+.p-top-message__container {
   display: none;
   z-index: 99;
 }
 
-// .p-top-shutter {
-//   background: f.$bg-white;
-//   display: none;
-//   height: 100vh;
-//   position: fixed;
-//   width: 100%;
-//   z-index: 100;
-//   animation: byeShutter 2s forwards;
-//   &::before,
-//   &::after{
-//     content:'';
-//     position:absolute;
-//     top:0;
-//     left:0;
-//     bottom:0;
-//     margin:auto;
-//   }
+.count-up-01,
+.count-up-02,
+.count-up-03,
+.count-up-04,
+.count-up-05,
+.count-up-06,
+.count-up-07,
+.count-up-08,
+.count-up-09,
+.count-up-10 {
+  display: none;
+}
 
-//   &::before{
-//     background-color: #93C5FF;
-//     width:0;
-//     height:1px;
-//     animation: shutterOpen1 2s forwards;
-//   }
+.p-top-message__container p {
+  display: none;
+}
 
-//   &::after{
-//     width:120%;
-//     height:0;
-//     margin-left:-10%;
-//     background-color:#FEF04C;
-//     animation: shutterOpen2 2s forwards;
-//   }
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
 
-//   @keyframes byeShutter{
-//     70%{
-//       opacity:1;
-//     }
-//     100%{
-//       opacity:0;
-//       display:none;
-//       z-index:-1;
-//     }
-//   }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
-//   @keyframes shutterOpen1{
-//     0%{
-//       width:0;
-//       height:1px;
-//     }
-//     50%{
-//       width:100%;
-//       height:1px;
-//     }
-//     90%{
-//       width:100%;
-//       height:100%;
-//     }
-//     100%{
-//       width:100%;
-//       height:100%;
-//     }
-//   }
+.fade-in-animation {
+  animation: fade-in 1s forwards;
+}
 
-//   @keyframes shutterOpen2{
-//     60%{
-//       width:120%;
-//       height:0;
-//       transform:rotate(5deg);
-//     }
-//     90%{
-//       width:120%;
-//       height:100%;
-//       transform:rotate(-5deg);
-//     }
-//     100%{
-//       width:120%;
-//       height:100%;
-//       transform:rotate(-5deg);
-//     }
-//   }
-// }
+@keyframes background-animation {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+
+.background-animation {
+  animation: background-animation 1s forwards;
+}
+
+@keyframes background-a {
+  0% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 
 // メインビジュアル
 .p-top__mv {
   position: relative;
-  @keyframes contentScale{
-    0%{
-      transform:scale(0.8);
+  animation: background-a 5s forwards;
+
+  @keyframes contentScale {
+    0% {
+      transform: scale(0.8);
     }
-    100%{
-      transform:scale(1);
+
+    100% {
+      transform: scale(1);
     }
   }
 
@@ -292,8 +271,8 @@
 
   .p-top-mission__slider {
     margin: 3.81vw auto 0;
-    padding: 0 3.8vw;
-    width: 72vw;
+    padding: 0 5.8vw;
+    width: 79vw;
 
     @include m.mq(sp) {
       margin: 20px auto 0;
@@ -308,6 +287,8 @@
     .p-top-mission__items {
       border-radius: 28px;
       overflow: hidden;
+      transition: 1s;
+      opacity: 0;
 
       .p-top-mission__items--top {
         align-items: center;
@@ -353,6 +334,14 @@
           padding: 16px 12px 24px;
         }
       }
+    }
+
+    .swiper-slide-active {
+      opacity: 1;
+    }
+
+    .swiper-slide-next {
+      opacity: 1;
     }
 
     .p-top-mission__items.first {

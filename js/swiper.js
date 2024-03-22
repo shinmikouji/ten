@@ -11,7 +11,7 @@ jQuery(function ($) {
   let slider = new Swiper(".p-top-mission__slider", {
     autoplay: true,
     loop: true,
-    spaceBetween: 56,
+    spaceBetween: 48,
     slidesPerView: 1,
     speed: 800,
     breakpoints: {

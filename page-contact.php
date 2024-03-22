@@ -34,7 +34,7 @@
   </div>
   <div class="p-contact-form">
     <h2 class="c-subtitle">お問い合わせフォーム</h2>
-    <?php echo do_shortcode('[contact-form-7 id="2114608" title="お問い合わせフォーム"]'); ?>
+    <?php echo do_shortcode('[contact-form-7 id="028c027" title="お問い合わせフォーム"]'); ?>
   </div>
 </main>
 <?php get_footer(); ?>

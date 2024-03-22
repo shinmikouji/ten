@@ -14,8 +14,8 @@
 <body>
   <header class="l-header-news">
     <div class="l-header-news-logoArea">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/header/logo-black.png" alt="株式会社TENの会社ロゴ">
-      <p>株式会社TEN 10</p>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/header/logo-white.png" alt="株式会社TENの会社ロゴ">
+      <p>株式会社TEN&nbsp;10</p>
     </div>
     <div class="l-header-news-news__navArea c-display--pc">
       <nav class="l-header-news__nav">
@@ -46,7 +46,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/header/Instagram.png" alt="Instagramのロゴ">
           </li>
           <li>
-            <img src="<?php echo get_template_directory_uri(); ?>/images/header/news-X.png" alt="Xのロゴ">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/header/X.png" alt="Xのロゴ">
           </li>
         </ul>
       </nav>

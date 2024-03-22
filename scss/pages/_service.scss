@@ -6,6 +6,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  overflow-x: hidden;
   padding: 5.56vw 0 8.33vw;
   @include m.mq(sp) {
     background-image: url("../images/service/bg-service-sp.jpg");
@@ -104,6 +105,30 @@
       }
     }
 
+    /* 左から右にスライドインするアニメーション */
+    .slide-in-left {
+      opacity: 0;
+      transform: translateX(-150px);
+      transition: opacity 1.5s ease, transform 1.5s ease;
+    }
+
+    .slide-in-left.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* 右から左にスライドインするアニメーション */
+    .slide-in-right {
+      opacity: 0;
+      transform: translateX(150px);
+      transition: opacity 1.5s ease, transform 1.5s ease;
+    }
+
+    .slide-in-right.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
     .p-service__contents-textArea {
       background: f.$bg-beige;
       padding: 3.33vw 0;
@@ -141,6 +166,7 @@
           width: 100%;
         }
       }
+
       img.second {
         @include m.mq(sp) {
           border: 5px solid f.$white;

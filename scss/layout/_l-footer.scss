@@ -51,6 +51,7 @@
       .l-footer__linkArea--middle {
         align-items: center;
         display: flex;
+        font-size: 1.43vw;
         gap: 5.56vw;
 
         @include m.mq(sp) {
@@ -88,8 +89,8 @@
 
         li {
           img {
-            height: 3.85vw;
-            width: 3.85vw;
+            height: 3.33vw;
+            width: 3.33vw;
           }
 
           .l-footer__image--x {
@@ -127,6 +128,7 @@
     }
 
     .l-footer__sitemap {
+      padding-top: 1.6vw;
       h3 {
         font-size: f.$fz-24;
 
@@ -157,6 +159,7 @@
     .l-footer__images {
       align-items: flex-end;
       display: flex;
+      padding-right: 3.7vw;
 
       img {
         height: 13.6vw;

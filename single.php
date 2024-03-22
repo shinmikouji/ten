@@ -9,7 +9,8 @@
       ?>
         <ul class="p-news-detail__categories">
           <?php foreach ($categories as $category) : ?>
-            <?php if ($category->name !== 'Uncategorized') : ?>
+            <?php if ($category->name !== '未分類') :
+            ?>
               <li><?php echo esc_html($category->name); ?></li>
             <?php endif; ?>
           <?php endforeach; ?>
@@ -31,7 +32,7 @@
             </div>
           <?php endif; ?>
           <?php if ($prev_post  && $next_post) : ?>
-          <div class="vertical-border"></div>
+            <div class="vertical-border"></div>
           <?php endif; ?>
           <?php if ($next_post) : ?>
             <div class="next">

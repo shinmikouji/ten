@@ -6,7 +6,7 @@
   height: 300px;
 
   @include m.mq(sp) {
-    height: 120px;
+    height: 140px;
   }
 
   img {
@@ -21,10 +21,11 @@
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 50%;
+    top: 67%;
 
     @include m.mq(sp) {
       font-size: 16px;
+      top: 72%;
     }
   }
 }

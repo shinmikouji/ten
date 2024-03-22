@@ -17,7 +17,7 @@
           </li>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/footer/tel-logo.svg" alt="電話のロゴ">
-            06-7897-3878
+            <a href="tel:06-7897-3878">06-7897-3878</a>
           </li>
         </ul>
       </div>

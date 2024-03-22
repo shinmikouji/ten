@@ -1,9 +1,21 @@
 <?php /* Template Name:top  */ ?>
 <?php get_header(); ?>
 <main>
-  <div class="p-top-countup">01</div>
-  <div class="p-top-message">Enjoy your life.</div>
-  <div class="p-top-shutter"></div>
+  <div class="p-top-count-up__container">
+    <div class="count-up-01">01</div>
+    <div class="count-up-02">02</div>
+    <div class="count-up-03">03</div>
+    <div class="count-up-04">04</div>
+    <div class="count-up-05">05</div>
+    <div class="count-up-06">06</div>
+    <div class="count-up-07">07</div>
+    <div class="count-up-08">08</div>
+    <div class="count-up-09">09</div>
+    <div class="count-up-10">10</div>
+  </div>
+  <div class="p-top-message__container">
+    <p>Enjoy your life.</p>
+  </div>
   <div class="p-top__mv">
     <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv.png" alt="TOPのメインビジュアル" class="c-display--pc">
     <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv-sp.png" alt="TOPのメインビジュアル" class="c-display--sp">
