@@ -6,17 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <?php wp_head(); ?>
 </head>
 
 <body>
   <header class="l-header">
-    <div class="l-header-logoArea">
+    <a class="l-header-logoArea" href="<?php echo esc_url(home_url('/')); ?>">
       <img src="<?php echo get_template_directory_uri(); ?>/images/header/logo-white.png" alt="株式会社TENの会社ロゴ">
       <p>株式会社TEN 10</p>
-    </div>
+    </a>
     <div class="l-header__navArea c-display--pc">
       <nav class="l-header__nav">
         <ul>

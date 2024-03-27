@@ -1,20 +1,42 @@
 <?php /* Template Name:top  */ ?>
 <?php get_header(); ?>
 <main>
-  <div class="p-top-count-up__container">
-    <div class="count-up-01">01</div>
-    <div class="count-up-02">02</div>
-    <div class="count-up-03">03</div>
-    <div class="count-up-04">04</div>
-    <div class="count-up-05">05</div>
-    <div class="count-up-06">06</div>
-    <div class="count-up-07">07</div>
-    <div class="count-up-08">08</div>
-    <div class="count-up-09">09</div>
-    <div class="count-up-10">10</div>
+  <div class="p-top-opening">
+    <div class="p-top-opening__bar bar-left"></div>
+    <h1 class="p-top-opening__title">
+      <span>Enjoy</span>
+      <span>your</span>
+      <span>life.</span>
+    </h1>
+    <div class="p-top-opening__title-shadow">
+      <div>
+        <span>E</span><span>n</span><span>j</span><span>o</span><span>y</span>
+      </div>
+      <div>
+        <span>y</span><span>o</span><span>u</span><span>r</span>
+      </div>
+      <div>
+        <span>l</span><span>i</span><span>f</span><span>e</span>
+      </div>
+    </div>
+    <div class="p-top-opening__contents">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/top/logo-black.png" alt="">
+      <p>
+        <span>株</span><span>式</span><span>会</span><span>社</span><span>TEN</span><span>&nbsp;</span><span>10</span>
+      </p>
+    </div>
+    <img src="<?php echo get_template_directory_uri(); ?>/images/top/ten-kun.png" alt="" class="p-top-opening__images">
+    <div class="p-top-opening__bar bar-right"></div>
   </div>
-  <div class="p-top-message__container">
-    <p>Enjoy your life.</p>
+  <div class="p-top-second-opening">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/top/opening.png" alt="" class="c-display--pc">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/top/opening-sp.png" alt="" class="c-display--sp">
+  </div>
+  <div class="p-top-final-opening">
+    <div class="p-top-final-opening__text">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/top/logo-white.png" alt="">
+      <p>株式会社TEN&nbsp;10</p>
+    </div>
   </div>
   <div class="p-top__mv">
     <img src="<?php echo get_template_directory_uri(); ?>/images/top/top-mv.png" alt="TOPのメインビジュアル" class="c-display--pc">
@@ -59,7 +81,10 @@
           <p class="p-top__mv-slider-slider-subtitle">
             Enjoy Your Life
           </p>
-          <h2><span>「Enjoy Your Life」</span>を生きる</h2>
+          <h2>
+            <span>「Enjoy Your Life」</span>
+            <br class="c-display--sp">を生きる
+          </h2>
           <p>
             人生を全うすることを目標に、<br />
             仕事とプライベートのバランスを大切にする。
@@ -79,7 +104,7 @@
           <p class="p-top__mv-slider-slider-subtitle">
             Mutual Respect
           </p>
-          <h2>相互尊重<span>の文化</span></h2>
+          <h2><span>相互尊重</span>の文化</h2>
           <p>
             一人ひとりの意見を尊重し、<br />
             開かれたコミュニケーションを奨励する。
@@ -118,7 +143,9 @@
           <p class="p-top__mv-slider-slider-subtitle">
             Radiance
           </p>
-          <h2><span>一人ひとりの輝き</span>を繋げる</h2>
+          <h2><span>一人ひとりの輝き</span>
+            <br class="c-display--sp">を繋げる
+          </h2>
           <p>
             個人の才能と輝きを認識し、<br />
             それを集合的な成功に結びつける。
@@ -160,7 +187,8 @@
       <ul class="swiper-wrapper p-top-mission__list">
         <li class="swiper-slide p-top-mission__items first">
           <div class="p-top-mission__items--top">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/top/mission-icon-01.png" alt="個々の成長の促進に関するアイコン">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/top/mission-icon-01.png" alt="" class="c-display--pc">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/top/mission-icon-01-sp.png" alt="" class="c-display--sp">
             <h3>1.個々の成長の促進</h3>
           </div>
           <p>
@@ -169,7 +197,8 @@
         </li>
         <li class="swiper-slide p-top-mission__items second">
           <div class="p-top-mission__items--top">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/top/mission-icon-02.png" alt="家族を含む幸福の実現に関するアイコン">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/top/mission-icon-02.png" alt="" class="c-display--pc">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/top/mission-icon-02-sp.png" alt="" class="c-display--sp">
             <h3>2.家族を含む幸福の実現</h3>
           </div>
           <p>
@@ -178,7 +207,8 @@
         </li>
         <li class="swiper-slide p-top-mission__items third">
           <div class="p-top-mission__items--top">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/top/mission-icon-03.png" alt="価値創造による社会への貢献に関するアイコン">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/top/mission-icon-03.png" alt="" class="c-display--pc">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/top/mission-icon-03-sp.png" alt="" class="c-display--sp">
             <h3>3.価値創造による社会への貢献</h3>
           </div>
           <p>
@@ -188,7 +218,8 @@
         </li>
         <li class="swiper-slide p-top-mission__items fourth">
           <div class="p-top-mission__items--top">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/top/mission-icon-04.png" alt="持続可能な未来へのコミットメントに関するアイコン">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/top/mission-icon-04.png" alt="" class="c-display--pc">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/top/mission-icon-04-sp.png" alt="" class="c-display--sp">
             <h3>4.持続可能な未来へのコミットメント</h3>
           </div>
           <p>
@@ -197,7 +228,8 @@
         </li>
         <li class="swiper-slide p-top-mission__items fifth">
           <div class="p-top-mission__items--top">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/top/mission-icon-05.png" alt="相互尊重と協働の促進に関するアイコン">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/top/mission-icon-05.png" alt="" class="c-display--pc">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/top/mission-icon-05-sp.png" alt="" class="c-display--sp">
             <h3>5.相互尊重と協働の促進</h3>
           </div>
           <p>

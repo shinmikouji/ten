@@ -1,10 +1,10 @@
 <footer class="l-footer">
   <div class="l-footer__inner">
     <div class="l-footer__linkArea">
-      <h3 class="l-footer__title">
+      <a class="l-footer__title" href="<?php echo esc_url(home_url('/')); ?>">
         <img src="<?php echo get_template_directory_uri(); ?>/images/footer/footer-logo.png" alt="フッターの会社ロゴ">
         <span>株式会社TEN&nbsp;10</span>
-      </h3>
+      </a>
       <div class="l-footer__linkArea--middle">
         <p class="l-footer__address">
           〒530-0015<br />

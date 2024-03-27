@@ -13,10 +13,10 @@
 
 <body>
   <header class="l-header-news">
-    <div class="l-header-news-logoArea">
+    <a class="l-header-news-logoArea" href="<?php echo esc_url(home_url('/')); ?>">
       <img src="<?php echo get_template_directory_uri(); ?>/images/header/logo-white.png" alt="株式会社TENの会社ロゴ">
       <p>株式会社TEN&nbsp;10</p>
-    </div>
+    </a>
     <div class="l-header-news-news__navArea c-display--pc">
       <nav class="l-header-news__nav">
         <ul>

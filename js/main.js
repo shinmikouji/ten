@@ -20,7 +20,7 @@ jQuery(function ($) {
       { threshold: 0.5 }
     );
 
-    $(".p-service__contents-items:first-of-type").each(function (){
+    $(".p-service__contents-items:first-of-type").each(function () {
       observer.observe(this);
       $(this).addClass("slide-in-left");
     });
@@ -37,65 +37,110 @@ jQuery(function ($) {
   });
 
   // オープニングアニメーション
-  const countUpContainer = $(".p-top-count-up__container");
-  const messageContainer = $(".p-top-message__container");
+  const firstContainer = $(".p-top-opening");
+  const secondContainer = $(".p-top-second-opening");
+  const finalContainer = $(".p-top-final-opening");
+  let windowWidth = $(window).width();
 
   function delay(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
-  function countAnimation(prev, next) {
-    $(prev).css("display", "none");
-    $(next).css("display", "block");
-    $(next).addClass("fade-in-animation");
+  async function opening() {
+    $(".p-top-opening").css('display', 'block');
+    $(".bar-left").css("height", $(window).height());
+    await delay(400);
+    $(".bar-right").css("height", $(window).height());
   }
 
-  async function countUp() {
-    countUpContainer.css("display", "flex");
-    $(".count-up-01").css("display", "block");
-    $(".count-up-01").addClass("fade-in-animation");
-    await delay(600);
-    countAnimation(".count-up-01", ".count-up-02");
-    await delay(600);
-    countAnimation(".count-up-02", ".count-up-03");
-    await delay(500);
-    countAnimation(".count-up-03", ".count-up-04");
-    await delay(300);
-    countAnimation(".count-up-04", ".count-up-05");
-    await delay(300);
-    countAnimation(".count-up-05", ".count-up-06");
-    await delay(300);
-    countAnimation(".count-up-06", ".count-up-07");
-    await delay(300);
-    countAnimation(".count-up-07", ".count-up-08");
-    await delay(300);
-    countAnimation(".count-up-08", ".count-up-09");
-    await delay(300);
-    countAnimation(".count-up-09", ".count-up-10");
-    await delay(600);
+  async function slideText() {
+    $(".p-top-opening__title span").each(function (index) {
+      $(this)
+        .delay(200 * index)
+        .queue(function () {
+          $(this).addClass("active").dequeue();
+        });
+    });
+    await delay(400);
+    $(".p-top-opening__title-shadow")
+      .eq(0)
+      .find("span")
+      .each(function (index) {
+        $(this)
+          .delay(20 * index)
+          .queue(function () {
+            $(this).addClass("active").dequeue();
+          });
+      });
+    $(".p-top-opening__title-shadow")
+      .eq(1)
+      .find("span")
+      .each(function (index) {
+        $(this)
+          .delay(20 * index)
+          .queue(function () {
+            $(this).addClass("active").dequeue();
+          });
+      });
+    $(".p-top-opening__title-shadow")
+      .eq(2)
+      .find("span")
+      .each(function (index) {
+        $(this)
+          .delay(20 * index)
+          .queue(function () {
+            $(this).addClass("active").dequeue();
+          });
+      });
   }
 
-  async function displayMessage() {
-    messageContainer.css("display", "flex");
-    messageContainer.find("p").css("display", "block");
-    countUpContainer.remove();
-    messageContainer.find("p").addClass("fade-in-animation");
+  async function slideBottomContents() {
+    $(".p-top-opening__contents img").addClass("active");
+    $(".p-top-opening__images").addClass("active");
+    await delay(800);
+    $(".p-top-opening__contents p span").each(function (index) {
+      $(this)
+        .delay(100 * index)
+        .queue(function () {
+          $(this).addClass("active").dequeue();
+        });
+    });
+  }
+
+  async function firstAnimation() {
+    await opening();
     await delay(1200);
-    messageContainer.addClass("background-animation");
-    await delay(1000);
-    messageContainer.remove();
+    slideText();
+    slideBottomContents();
+  }
+
+  async function lastAnimation() {
+    secondContainer.css("animation", "slide-in 5s forwards");
+    windowWidth > 767 ?  await delay(2800) : await delay(2000);
+    firstContainer.remove();
+    finalContainer.css("display", "flex");
+    secondContainer.remove();
+    await delay(50);
+    $(".p-top-final-opening__text").css("opacity", "1");
+    await delay(2500);
+    $(".p-top-final-opening__text").css("opacity", "0");
+    finalContainer.css("opacity", "0");
+    $(".p-top__mv").css("animation", "contentScale 5s forwards");
   }
 
   async function run() {
-    await countUp();
-    displayMessage();
+    firstAnimation();
+    await delay(4000);
+    lastAnimation();
+    await delay(10000);
+    finalContainer.remove();
   }
 
   const keyName = "visited";
   const keyValue = true;
 
-  // if (!sessionStorage.getItem(keyName)) {
-  //   sessionStorage.setItem(keyName, keyValue);
-  //   run();
-  // }
+  if (!sessionStorage.getItem(keyName)) {
+    sessionStorage.setItem(keyName, keyValue);
+    run();
+  }
 });
