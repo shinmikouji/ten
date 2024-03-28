@@ -166,7 +166,7 @@
   height: 200vw;
   position: fixed;
   left: -300%;
-  top: -200%;
+  top: -350%;
   width: 300vw;
   z-index: 85;
 
@@ -182,7 +182,7 @@
   @keyframes slide-in {
     0% {
       left: -300%;
-      top: -200%;
+      top: -350%;
     }
 
     100% {

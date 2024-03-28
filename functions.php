@@ -3,7 +3,7 @@ function enqueue_head() {
   wp_enqueue_style('style_name', get_template_directory_uri() . '/css/style.css', array(), '1.0.0');
   wp_enqueue_style(
     'googlefonts',
-    'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap',
+    'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho&display=swap',
     array(),
     null
   );

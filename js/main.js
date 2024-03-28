@@ -116,7 +116,7 @@ jQuery(function ($) {
 
   async function lastAnimation() {
     secondContainer.css("animation", "slide-in 5s forwards");
-    windowWidth > 767 ?  await delay(2800) : await delay(2000);
+    windowWidth > 767 ?  await delay(2800) : await delay(2200);
     firstContainer.remove();
     finalContainer.css("display", "flex");
     secondContainer.remove();
@@ -129,18 +129,18 @@ jQuery(function ($) {
   }
 
   async function run() {
-    firstAnimation();
-    await delay(4000);
+    // firstAnimation();
+    // await delay(4000);
     lastAnimation();
-    await delay(10000);
-    finalContainer.remove();
+    // await delay(10000);
+    // finalContainer.remove();
   }
 
   const keyName = "visited";
   const keyValue = true;
 
+  run();
   if (!sessionStorage.getItem(keyName)) {
     sessionStorage.setItem(keyName, keyValue);
-    run();
   }
 });
