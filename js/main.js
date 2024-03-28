@@ -129,11 +129,11 @@ jQuery(function ($) {
   }
 
   async function run() {
-    // firstAnimation();
-    // await delay(4000);
+    firstAnimation();
+    await delay(4000);
     lastAnimation();
-    // await delay(10000);
-    // finalContainer.remove();
+    await delay(10000);
+    finalContainer.remove();
   }
 
   const keyName = "visited";
