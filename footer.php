@@ -21,13 +21,13 @@
           </li>
         </ul>
       </div>
-      <nav class="c-display--pc">
+      <!-- <nav class="c-display--pc">
         <ul>
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/footer/footer-fasebook.png" alt="Facebookのロゴ"></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/footer/footer-instagram.png" alt="Instagramのロゴ"></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/footer/footer-x.png" alt="Xのロゴ" class="l-footer__image--x"></li>
         </ul>
-      </nav>
+      </nav> -->
     </div>
     <div class="l-footer__inner--bottom">
       <div class="l-footer__sitemap">
@@ -41,13 +41,13 @@
           </ul>
         </nav>
       </div>
-      <nav class="c-display--sp">
+      <!-- <nav class="c-display--sp">
         <ul>
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/footer/footer-fasebook.png" alt="Facebookのロゴ"></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/footer/footer-instagram.png" alt="Instagramのロゴ"></li>
           <li><img src="<?php echo get_template_directory_uri(); ?>/images/footer/footer-x.png" alt="Xのロゴ" class="l-footer__image--x"></li>
         </ul>
-      </nav>
+      </nav> -->
       <div class="l-footer__images">
         <img src="<?php echo get_template_directory_uri(); ?>/images/footer/footer-tenkun.gif" alt="TENくんの画像">
       </div>

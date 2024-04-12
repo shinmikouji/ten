@@ -163,17 +163,18 @@
 }
 
 .p-top-second-opening {
+  display: none;
   height: 200vw;
   position: fixed;
   left: -300%;
-  top: -350%;
+  top: -200%;
   width: 300vw;
   z-index: 85;
 
   @include m.mq(sp) {
-    height: 500vw;
+    height: 700vw;
     left: 0;
-    top: -300%;
+    top: -400%;
     width: 200vw;
   }
 }
@@ -182,7 +183,7 @@
   @keyframes slide-in {
     0% {
       left: -300%;
-      top: -350%;
+      top: -200%;
     }
 
     100% {
@@ -196,7 +197,7 @@
   @keyframes slide-in {
     0% {
       left: 0;
-      top: -300%;
+      top: -400%;
     }
 
     100% {

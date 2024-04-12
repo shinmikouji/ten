@@ -731,18 +731,19 @@ table {
 }
 
 .p-top-second-opening {
+  display: none;
   height: 200vw;
   position: fixed;
   left: -300%;
-  top: -350%;
+  top: -200%;
   width: 300vw;
   z-index: 85;
 }
 @media screen and (max-width: 767px) {
   .p-top-second-opening {
-    height: 500vw;
+    height: 700vw;
     left: 0;
-    top: -300%;
+    top: -400%;
     width: 200vw;
   }
 }
@@ -751,7 +752,7 @@ table {
   @keyframes slide-in {
     0% {
       left: -300%;
-      top: -350%;
+      top: -200%;
     }
     100% {
       left: 0;
@@ -763,7 +764,7 @@ table {
   @keyframes slide-in {
     0% {
       left: 0;
-      top: -300%;
+      top: -400%;
     }
     100% {
       left: 0;
@@ -1856,6 +1857,17 @@ table {
     margin: 24px auto 0;
     padding: 8px 0;
     width: 100%;
+  }
+}
+
+.wpcf7-response-output {
+  margin: 3vw auto 0 !important;
+  width: fit-content;
+}
+@media screen and (max-width: 767px) {
+  .wpcf7-response-output {
+    font-size: 14px;
+    margin: 20px auto 0 !important;
   }
 }
 

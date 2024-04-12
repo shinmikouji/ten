@@ -255,3 +255,14 @@
     }
   }
 }
+
+// 問い合わせのレスポンス
+.wpcf7-response-output {
+  margin: 3vw auto 0 !important;
+  width: fit-content;
+
+  @include m.mq(sp) {
+    font-size: 14px;
+    margin: 20px auto 0 !important;
+  }
+}

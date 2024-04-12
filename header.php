@@ -30,7 +30,7 @@
           </li>
         </ul>
       </nav>
-      <nav class="l-header__nav--sns">
+      <!-- <nav class="l-header__nav--sns">
         <ul>
           <li>
             <img src="<?php echo get_template_directory_uri(); ?>/images/header/Facebook.png" alt="Facebookのロゴ">
@@ -42,7 +42,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/images/header/X.png" alt="Xのロゴ">
           </li>
         </ul>
-      </nav>
+      </nav> -->
     </div>
     <button class="l-header__hamburger-button c-display--sp">
       <span class="top"></span>
@@ -58,7 +58,7 @@
           <li><a href="<?php echo esc_url(home_url('/contact')); ?>">お問い合わせ</a></li>
         </ul>
       </nav>
-      <nav class="l-header__hamburger-sns">
+      <!-- <nav class="l-header__hamburger-sns">
         <ul>
           <li>
             <a href="">
@@ -76,6 +76,6 @@
             </a>
           </li>
         </ul>
-      </nav>
+      </nav> -->
     </div>
   </header>

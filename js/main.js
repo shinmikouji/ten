@@ -115,8 +115,9 @@ jQuery(function ($) {
   }
 
   async function lastAnimation() {
+    secondContainer.css('display', 'block');
     secondContainer.css("animation", "slide-in 5s forwards");
-    windowWidth > 767 ?  await delay(2800) : await delay(2200);
+    windowWidth > 767 ?  await delay(2800) : await delay(2500);
     firstContainer.remove();
     finalContainer.css("display", "flex");
     secondContainer.remove();
@@ -139,8 +140,8 @@ jQuery(function ($) {
   const keyName = "visited";
   const keyValue = true;
 
-  run();
   if (!sessionStorage.getItem(keyName)) {
     sessionStorage.setItem(keyName, keyValue);
+    run();
   }
 });
