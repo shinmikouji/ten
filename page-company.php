@@ -23,7 +23,7 @@
       <dt class="fourth">事業内容</dt>
       <dd>SES　受託開発</dd>
       <dt class="fifth">URL</dt>
-      <dd>会社の公式URL</dd>
+      <dd><a href="https://ten10enjoy-your-life.com/">https://ten10enjoy-your-life.com/</a></dd>
       <dt class="fifth">連絡先</dt>
       <dd>06−7897−3878</dd>
     </dl>
