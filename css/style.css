@@ -1377,6 +1377,14 @@ table {
     padding: 4px 0 4px 8px;
   }
 }
+.p-company .p-company__contents dd img {
+  width: 7vw;
+}
+@media screen and (max-width: 767px) {
+  .p-company .p-company__contents dd img {
+    width: 75px;
+  }
+}
 .p-company .p-company__contents .first {
   background: #5790FF;
 }
@@ -2260,4 +2268,4 @@ table {
   .p-news-archive .p-news-archive-pagination .next::after {
     right: -24px;
   }
-}/*# sourceMappingURL=style.css.map */
+}

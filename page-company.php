@@ -13,7 +13,7 @@
       <dt class="second">設立日</dt>
       <dd>2024年3月15日</dd>
       <dt class="second">代表取締役</dt>
-      <dd>麻田　憲彦</dd>
+      <dd><img src="<?php echo get_template_directory_uri(); ?>/images/company/text.svg" alt="麻田　憲彦"></dd>
       <dt class="third">資本金</dt>
       <dd>100万円</dd>
       <dt class="third">従業員数</dt>

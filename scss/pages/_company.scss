@@ -59,6 +59,14 @@
         font-size: 14px;
         padding: 4px 0 4px 8px;
       }
+
+      img {
+        width: 7vw;
+
+        @include m.mq(sp) {
+          width: 75px;
+        }
+      }
     }
 
     // リストの色
